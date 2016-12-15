@@ -16,3 +16,12 @@ window.onload = function () {
   followCursor(elemList, scale);
 };
 ```
+
+##Compatability
+#### Created on Chrome 55 on Mac OSX 10
+Tested on
+
+| Browser | OS | |
+| ------- | --- | ------ |
+| Chrome 55  | Mac OSX 10 | ✔ |
+| Firefox 50  | Mac OSX 10 | ✔ |

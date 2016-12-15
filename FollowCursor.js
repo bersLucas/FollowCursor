@@ -63,7 +63,6 @@ const followCursor = function(elemList, scale=10) {
   //Reset element's information
   //(On resize or scroll)
   const resetSizes = function() {
-    console.log(boxSizes);
     boxSizes.reduce((total,box) => {
       let boxRect = box.obj.getBoundingClientRect();
       box.left = boxRect.left;

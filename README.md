@@ -24,4 +24,4 @@ Tested on
 | Browser | OS | |
 | ------- | --- | ------ |
 | Chrome 55  | Mac OSX 10 | ✔ |
-| Firefox 50  | Mac OSX 10 | FollowCursor#1 |
+| Firefox 50  | Mac OSX 10 | [#1](https://github.com/bersLucas/FollowCursor/issues/1) |

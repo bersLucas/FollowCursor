@@ -43,7 +43,7 @@ const followCursor = function(elemList, scale=10) {
       let xPos = (e.clientX - boxSizes[count].left) / boxSizes[count].width;
       
       //Cursor's Y position in relation to the element (0-1)
-      let yPos = ((document.body.scrollTop + e.clientY) - boxSizes[count].top) / boxSizes[count].height;
+      let yPos = ((document.documentElement.scrollTop + e.clientY) - boxSizes[count].top) / boxSizes[count].height;
 
       //Rotation calculation
       let rotateY = (scale * -1) + (xPos * (scale * 2));

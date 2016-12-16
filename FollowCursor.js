@@ -29,8 +29,16 @@ const followCursor = function(elemList, scale=10) {
       top: getElemDistance(img),
       height: box.height,
       obj: img,
+      classes: img.getAttribute("style"),
     }
-
+    
+    //Format style elements that existed before
+    if (boxSizes[counter].classes === null){
+      boxSizes[counter].classes = "";
+    }else{
+      boxSizes[counter].classes += ";"
+    }
+    
     //Apply a counter to find key in boxSizes array
     img.setAttribute("data-mouserotate",counter);
 
@@ -57,7 +65,7 @@ const followCursor = function(elemList, scale=10) {
       if (rotateX < (scale * -1)){rotateX = (scale * -1)}
 
       //Apply rotation
-      img.setAttribute("style","transform: perspective("+boxSizes[count].height+"px) rotateY("+rotateY+"deg) rotateX("+rotateX+"deg)");
+      img.setAttribute("style",`${boxSizes[count].classes} transform: perspective(${boxSizes[count].height}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`);
     }
   },0);
   

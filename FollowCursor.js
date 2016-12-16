@@ -13,7 +13,7 @@ const followCursor = function(elemList, scale=10) {
   const boxSizes = [];
   const $elems = Array.from(elemList);
   let counter = 0;
-  let scrollPos = 0;
+  let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   
   //Applied to every element in $elems
   $elems.reduce((total,img) => {

@@ -4,6 +4,8 @@
 ```html
 <script src="path/to/FollowCursor.js"></script>
 ```
+<sub>The minified version uses [Babel](https://github.com/babel/babel) to compile and [Uglyify](https://github.com/mishoo/UglifyJS2) to minify</sub>
+
 ####JS
 ```js
 //Any list of elements

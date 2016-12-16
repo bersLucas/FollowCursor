@@ -72,13 +72,15 @@ const followCursor = function(elemList, scale=10) {
   //Reset element's information
   //(On resize or scroll)
   const resetSizes = function() {
-    boxSizes.reduce((total,box) => {
+    boxSizes.reduce((total,box,i) => {
       let boxRect = box.obj.getBoundingClientRect();
-      box.left = boxRect.left;
-      box.width = boxRect.width;
-      box.height = boxRect.height;
-      box.top = getElemDistance(box.obj);
-    },0); 
+      boxSizes[i].left = boxRect.left;
+      boxSizes[i].width = boxRect.width;
+      boxSizes[i].height = boxRect.height;
+      boxSizes[i].top = getElemDistance(box.obj);
+    },0);
+    
+    scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   }
   
   window.onscroll = resetSizes;

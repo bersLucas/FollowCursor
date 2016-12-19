@@ -11,7 +11,13 @@
 const followCursor = function(elemList, scale=10) {
   //Init
   const boxSizes = [];
-  const $elems = Array.from(elemList);
+  
+  if (Array.from !== undefined){
+    const $elems = Array.from(elemList);
+  }else{
+    $elems = elemList;
+  }
+  
   let counter = 0;
   let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   

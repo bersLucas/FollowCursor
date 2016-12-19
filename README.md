@@ -20,10 +20,10 @@ window.onload = function () {
 ```
 
 ##Compatability
-#### Created on Chrome 55 on Mac OSX 10
-Tested on
 
-| Browser | OS | |
-| ------- | --- | ------ |
-| Chrome 55  | Mac OSX 10 | ✔ |
-| Firefox 50  | Mac OSX 10 | ✔ |
+| Browser | Version |
+| ------- | --- | 
+| Internet Explorer | 10+ (Minified only) |
+| Firefox | 16+ |
+| Chrome | 36 |
+| Mobile | No |

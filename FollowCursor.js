@@ -15,7 +15,10 @@ const followCursor = function(elemList, scale=10) {
   if (Array.from !== undefined){
     const $elems = Array.from(elemList);
   }else{
-    $elems = elemList;
+    $elems = [];
+    for (i=0; i<elemList.length; i++){
+      $elems[i] = elemList[i];
+    }
   }
   
   let counter = 0;

@@ -20,10 +20,12 @@ window.onload = function () {
 ```
 
 ##Compatability
+<sub>Note: The minified version also uses Babelfill for higher compatability.</sub>
+
 
 | Browser | Version |
 | ------- | --- | 
-| Internet Explorer | 10+ (Minified only) |
+| Internet Explorer | 10+ |
 | Firefox | 16+ |
-| Chrome | 36 |
+| Chrome | 36+ |
 | Mobile | No |

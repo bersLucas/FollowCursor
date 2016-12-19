@@ -11,9 +11,10 @@
 const followCursor = function(elemList, scale=10) {
   //Init
   const boxSizes = [];
+  let $elems = [];
   
   if (Array.from !== undefined){
-    const $elems = Array.from(elemList);
+    $elems = Array.from(elemList);
   }else{
     $elems = [];
     for (i=0; i<elemList.length; i++){

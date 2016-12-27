@@ -1,5 +1,5 @@
 # FollowCursor
-![Demo](https://cloud.githubusercontent.com/assets/3892772/21502794/73700ace-cc20-11e6-9300-384fa191361e.gif)
+![demo](https://cloud.githubusercontent.com/assets/3892772/21510105/b40b9e12-cc5d-11e6-96c8-ff424d3ad846.gif)
 
 ## Usage
 ####HTML

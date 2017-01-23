@@ -75,7 +75,7 @@ const followCursor = function(elemList, scale=10) {
       if (rotateX < (scale * -1)){rotateX = (scale * -1)}
 
       //Apply rotation
-      img.setAttribute("style",`${boxSizes[count].classes} transform: perspective(${boxSizes[count].height}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`);
+      img.setAttribute("style",`${boxSizes[count].classes}; ${transformCSS(boxSizes[count].height,rotateX.toFixed(3),rotateY.toFixed(3))}`);
     }
   },0);
   
@@ -108,4 +108,12 @@ const getElemDistance = function (elem) {
     } while (elem);
   }
   return location >= 0 ? location : 0;
+};
+
+//Function to add prefixes to transform rules
+const transformCSS = function(perspective,rotateX,rotateY){
+  let css = `transform: perspective(${perspective}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg);`;
+  css += `-webkit-transform: perspective(${perspective}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg);`;
+  css += `-moz-transform: perspective(${perspective}px) rotateY(${rotateY}deg) rotateX(${rotateX}deg);`;
+  return css;
 };

@@ -1,0 +1,38 @@
+{
+  "name": "followcursor",
+  "version": "1.0.0",
+  "description": "Rotate elements to create a following effect ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bersLucas/FollowCursor.git"
+  },
+  "keywords": [
+    "animation",
+    "follow",
+    "effect",
+    "transform",
+    "transition",
+    "visual"
+  ],
+  "author": "bersLucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bersLucas/FollowCursor/issues"
+  },
+  "homepage": "https://github.com/bersLucas/FollowCursor#readme",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

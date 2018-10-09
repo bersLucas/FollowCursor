@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/bersLucas/FollowCursor.git"
   },
+  "browserslist": "> 0.25%, not dead",
   "keywords": [
     "animation",
     "follow",
@@ -20,19 +21,19 @@
     "url": "https://github.com/bersLucas/FollowCursor/issues"
   },
   "homepage": "https://github.com/bersLucas/FollowCursor#readme",
-  "main": "gulpfile.js",
+  "main": "dist/followCursor.js",
+  "scripts": {
+    "babel": "npx babel src/app.js --out-file dist/followCursor.js",
+    "babel-watch": "npx babel src/app.js --watch --out-file dist/followCursor.js",
+    "uglify": "uglifyjs dist/followCursor.js -m -o dist/followCursor.min.js"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.1",
-    "gulp-rename": "^1.3.0",
-    "gulp-uglify": "^3.0.0"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "uglify-es": "^3.3.9"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -4,14 +4,12 @@
 ## Usage
 ### Install
 ```bash
-npm install followcursor
-## or
 yarn add followcursor
 ```
 
 ### HTML
 ```html
-<script src="node_modules/followcursor/dist/followcursor-min.js"></script>
+<script src="node_modules/followcursor/dist/followcursor.min.js"></script>
 <!--if supporting IE11-->
 <script src="node_modules/babel-polyfill/dist/polyfill-min.js"></script>
 ```
@@ -25,6 +23,17 @@ const elemList = document.querySelector("SELECTOR");
 const scale = 50
 
 window.onload = function () {
-  followCursor(elemList, scale);
+    followCursor(elemList, scale);
 };
+```
+
+## Development
+
+```bash
+# Compile code once
+yarn run babel
+# Watch for code changes
+yarn run babel-watch
+# Minify code
+yarn run uglify
 ```

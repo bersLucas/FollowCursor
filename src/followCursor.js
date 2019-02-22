@@ -39,7 +39,7 @@ const followCursor = function(elemList, scale=10) {
       top: getElemDistance(img),
       height: box.height,
       obj: img,
-      previousTransform: img.style.transform,
+      previousTransform: getComputedStyle(img).transform
     }
 
     //Apply a counter to find key in boxSizes array

@@ -68,9 +68,6 @@ const followCursor = function(elemList, scale=10) {
       if (rotateX < (scale * -1)){rotateX = (scale * -1)}
 
       //Apply rotation
-      console.log(boxSizes[img.getAttribute('data-mouserotate')].previousTransform +
-        transformCSS(boxSizes[count].height,rotateX.toFixed(3),rotateY.toFixed(3)))
-
       img.style.transform = boxSizes[img.getAttribute('data-mouserotate')].previousTransform +
         transformCSS(boxSizes[count].height,rotateX.toFixed(3),rotateY.toFixed(3))
     }

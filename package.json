@@ -23,9 +23,10 @@
   "homepage": "https://github.com/bersLucas/FollowCursor#readme",
   "main": "dist/followCursor.js",
   "scripts": {
-    "babel": "npx babel src/app.js --out-file dist/followCursor.js",
+    "babel": "npx babel src --out-dir dist",
     "babel-watch": "npx babel src/app.js --watch --out-file dist/followCursor.js",
-    "uglify": "uglifyjs dist/followCursor.js -m -o dist/followCursor.min.js"
+    "uglify": "uglifyjs dist/followCursor.js -m -o dist/followCursor.min.js",
+    "prepublish": "npm run babel && npm run uglify"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

@@ -1,6 +1,6 @@
 {
   "name": "followcursor",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Rotate elements to create a following effect ",
   "repository": {
     "type": "git",
@@ -29,12 +29,12 @@
     "prepublish": "npm run babel && npm run uglify"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "uglify-es": "^3.3.9"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
   }
 }

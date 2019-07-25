@@ -24,17 +24,19 @@
   "main": "dist/followCursor.js",
   "scripts": {
     "babel": "npx babel src --out-dir dist",
-    "babel-watch": "npx babel src/app.js --watch --out-file dist/followCursor.js",
     "uglify": "uglifyjs dist/followCursor.js -m -o dist/followCursor.min.js",
     "prepublish": "npm run babel && npm run uglify"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.4",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
     "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }

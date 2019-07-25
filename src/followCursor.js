@@ -61,7 +61,7 @@ const followCursor = (elemList, scale = 10) => {
     // Applied on mouse over
     img.addEventListener('mousemove', (e) => {
       // get key
-      const count = e.target.getAttribute('data-mouserotate');
+      const count = e.currentTarget.getAttribute('data-mouserotate');
 
       // Cursor's X position in relation to the element (0-1)
       const xPos = (e.clientX - boxSizes[count].left) / boxSizes[count].width;
